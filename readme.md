@@ -8,16 +8,27 @@ Welcome to the `big-data-analytics-with-pyspark` repository, your resource for e
 
 ## Getting Started
 
-To get started with this repository:
-1. Clone the repository to your local machine or open it in a cloud environment that supports Jupyter Notebooks or Databricks.
-2. Install the required dependencies:
+### PySpark installation
+
+PySpark is included in the official releases of Spark available in the [Apache Spark website](https://spark.apache.org/downloads.html). For Python users, PySpark also provides pip installation from PyPI. This is usually for local usage or as a client to connect to a cluster instead of setting up a cluster itself.
+
+### Using PyPI
 
 ```python
 pip install pyspark
 ```
 
-3. Navigate through the directories to find projects or topics of interest.
-4. Read through the `README.md` files in each directory for specific setup and run instructions.
+Extra dependencies:
+
+```python
+# Spark SQL
+pip install pyspark[sql]
+# pandas API on Spark
+pip install pyspark[pandas_on_spark] plotly  # to plot your data, you can install plotly together.
+# Spark Connect
+pip install pyspark[connect]
+```
+
 
 ## Contributions
 
